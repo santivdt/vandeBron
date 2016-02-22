@@ -12,7 +12,7 @@ angular
         $locationProvider.html5Mode({
             enabled: true,
             requireBase: false
-        })
+        });
     })
     .constant("Api",  {
         "url": "http://private-d6dff-vandebron.apiary-mock.com"

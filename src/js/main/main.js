@@ -1,7 +1,6 @@
-'use strict';
-
 angular.module('vandeBron')
     .config(function($stateProvider) {
+        'use strict';
         $stateProvider
             .state('main', {
                 url: '/',
