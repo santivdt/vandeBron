@@ -1,0 +1,24 @@
+<div layout="row">
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Adress</th>
+                <th>Gender</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="subscriber in subscriptions">
+                <td>{{subscriber.name}}</td>
+                <td>
+                    <div ng-repeat="address in subscriber.address">
+                        {{address.street}} {{address.number}}, {{address.city}}
+                    </div>
+                </td>
+                <td>{{subscriber.gender}}</td>
+                <td><a href="mailto:{{subscriber.email}}">{{subscriber.email}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

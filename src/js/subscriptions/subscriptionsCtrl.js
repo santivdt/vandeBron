@@ -1,5 +1,9 @@
 angular.module('vandeBron')
-    .controller('subscriptionCtrl', function ($scope, $http) {
+    .controller('subscriptionsCtrl', function ($scope, subscriptions) {
+
+        //bind data from resolve to scope
+        $scope.subscriptions = subscriptions.data;
+
 
     });
 
