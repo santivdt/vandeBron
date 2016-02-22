@@ -6,12 +6,6 @@
   width: 100%;
 }
 
-// change color of material button
-a.md-button.md-default-theme.md-raised, a.md-button.md-raised, .md-button.md-default-theme.md-raised, .md-button.md-raised {
-  background-color: $green;
-  color: white;
-}
-
 //menu buttons
 .btn-menu {
   padding: 20px 30px 20px 30px;
@@ -20,15 +14,15 @@ a.md-button.md-default-theme.md-raised, a.md-button.md-raised, .md-button.md-def
   font-size: 0.9rem;
   font-weight: 300;
   text-transform: uppercase;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   border-radius: 5px;
   &:hover {
-    background-color: white;
-    color: black!important;
+    background-color: #FFFFFF;;
+    color: #000000;
   }
   &:focus {
-    color: white!important;
+    color: #FFFFFF;
   }
 }
 
@@ -59,12 +53,12 @@ a.md-button.md-default-theme.md-raised, a.md-button.md-raised, .md-button.md-def
 
 .btn-submit {
   background-color: $primary-color;
-  color: white;
+  color: #FFFFFF;;
   &:hover {
     background-color: lighten( $primary-color, 10% );
   }
   &:disabled {
-    background-color: lightgrey;
+    background-color: #CCCCCC;
     cursor: not-allowed;
   }
 }
