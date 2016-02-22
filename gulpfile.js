@@ -102,7 +102,7 @@ gulp.task('html', function(){
 
 // IMG
 gulp.task('img', function(){
-    return gulp.src(['src/img/*.png', 'src/img/*.ico'])
+    return gulp.src(['src/img/*.png', 'src/img/*.ico', 'src/img/*.svg'])
         .pipe(gulp.dest('build/img'))
         .pipe(livereload());
 });
