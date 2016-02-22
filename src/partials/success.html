@@ -1,0 +1,17 @@
+<div layout="row" layout-sm="column" layout-padding="30">
+    <div flex-gt-sm="20" flex-gt-md="30" flex="100" hide-xs></div>
+    <div flex-gt-sm="60" flex-gt-md="40" flex="100">
+        <h1 class="text-center"> <span class="glyphicon glyphicon-ok"></span> You subscribed succesfully!</h1>
+        <span>Thanks for subscribing, here are your details;</span>
+        <h3>{{user.name}}</h3>
+        <address ng-repeat="address in user.address">
+            {{address.street}} {{address.number}}<br>
+            {{address.zipcode}} {{address.city}}
+        </address>
+        <p>{{user.phone}}</p>
+        <p>{{user.email}}</p>
+        <p>{{user.gender}}</p>
+    </div>
+    <div flex-gt-sm="20" flex-gt-md="30" flex="100" hide-xs></div>
+</div>
+
